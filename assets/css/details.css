@@ -1,0 +1,25 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PokemonDetail {
+    border-radius: 10px;
+    background-color: #292d33;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.pokemonHeader {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pokemonHeader .number {
+    
+
+}

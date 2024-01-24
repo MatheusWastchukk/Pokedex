@@ -135,6 +135,14 @@
     height: 70px;
 }
 
+.pokemon .details {
+    font-size: .7rem;
+    border-radius: 5px;
+    opacity: .5;
+    text-decoration: none;
+    text-align: left;
+}
+
 .pagination {
     display: flex;
     flex-direction: row;
