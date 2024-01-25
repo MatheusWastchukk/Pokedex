@@ -5,23 +5,27 @@ const maxRecords = 151
 const limit = 10
 let offset = 0;
 
+function functeste(pokemon) {
+    window.location.href = `detalhes.html?pokemon=${pokemon}`;
+    console.log(pokemon)
+}
+
 function convertPokemonToLi(pokemon) {
     return `
     
-        <li class="pokemon ${pokemon.type}">
-            <span class="number">#${pokemon.number}</span>
-            <span class="name">${pokemon.name}</span>
-
-            <div class="detail">
-                <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                </ol>
-
-                <img src="${pokemon.photo}"
-                     alt="${pokemon.name}">
-            </div>
-            <a href="detalhes.html" class="details">Ver Mais</a>
-        </li>
+    <li onclick=functeste(${JSON.stringify(pokemon.name)}) class="pokemon ${pokemon.type}">
+    <span class="number">#${pokemon.number}</span>
+    <span class="name">${pokemon.name}</span>
+    
+    <div class="detail">
+    <ol class="types">
+    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+    </ol>
+    
+    <img src="${pokemon.photo}"
+    alt="${pokemon.name}">
+    </div>
+    </li>
     `
 }
 
@@ -32,9 +36,9 @@ function loadPokemonItens(offset, limit) {
 
         const newPokemonElements = document.querySelectorAll('.pokemon');
         newPokemonElements.forEach(function(newPokemonElement) {
-            newPokemonElement.addEventListener('click', function() {
-                console.log('Funcionou');
-            });
+         //   newPokemonElement.addEventListener('click', function() {
+
+         //   });
         });
     })
 }
