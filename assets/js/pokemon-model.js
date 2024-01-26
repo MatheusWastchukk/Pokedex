@@ -9,6 +9,8 @@ class Pokemon {
     weight;
     abilities = [];
     ability;
-    gender;
-    eggGroups;
+    stats_name = []
+    stat
+    base_stats = []
+    base_stat
 }

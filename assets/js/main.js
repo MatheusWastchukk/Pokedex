@@ -34,12 +34,6 @@ function loadPokemonItens(offset, limit) {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
 
-        const newPokemonElements = document.querySelectorAll('.pokemon');
-        newPokemonElements.forEach(function(newPokemonElement) {
-         //   newPokemonElement.addEventListener('click', function() {
-
-         //   });
-        });
     })
 }
 
