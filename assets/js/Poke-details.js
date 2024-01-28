@@ -50,12 +50,27 @@ function attHtml(pokemon) {
 
 function detailPokemon (pokemon) {
     return `
-    <h1> ${pokemon.name} </h1>
-    <span> ${pokemon.number} <span>
-    <span> ${pokemon.types} <span>
-    <img src='${pokemon.photo}'>
-    <span> ${pokemon.height} ' height <span>
-    <span> ${pokemon.weight} ' weight <span>
-    <span> ${pokemon.abilities} <span>
+    <div class="pokemondetails ${pokemon.type}">
+    <h1 class="name"> ${pokemon.name} </h1>
+    <span class="number"> #${pokemon.number} </span>
+    <img src='${pokemon.photo}' alt="${pokemon.name}">
+    </div>
+    <div class="pokedetails">
+    <ol class="types">
+    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+    </ol>
+    <section class="hw">
+    <span class="weight"> ${pokemon.weight} ' 
+        <p class="weight2">weight</p>
+    </span>
+    <span class="height"> ${pokemon.height} '
+        <p class="height2">height</p>
+    </span>
+    </section>
+    <ol class="abilities">
+    <h2>Abilities</h2>
+    ${pokemon.abilities.map((ability) => `<li class="ability ${ability}">${ability}</li>`).join('')}
+    </ol>
+    </div>
     `
 }

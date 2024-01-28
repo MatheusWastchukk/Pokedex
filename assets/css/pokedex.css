@@ -87,7 +87,20 @@
     border-radius: 10px;
     box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
     transition: all 0.3s ease-out;
+    
 }
+
+.pokemon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/images/pngaaa.com-96154.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.5;
+    width: 90%;
+  }
 
 .pokemon:hover {
     transform: translateY(-5px);
@@ -171,6 +184,119 @@
 .pagination button:hover {
     cursor: pointer;
     transform: translateY(-5px);
+}
+
+.pokemondetails {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    transition: all 0.3s ease-out;
+
+}
+.pokemondetails .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: .25rem;
+}
+
+.pokemondetails .number {
+    color: white;
+    text-align: right;
+    font-size: x-large;
+}
+
+.pokedetails {
+    background-color: #292d33;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+}
+
+.pokedetails .types {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 5px auto;
+    list-style: none;
+}
+
+.pokedetails .types .type {
+    color: #fff;
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: medium;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+}
+
+.pokemondetails img {
+    width: 50%;
+    height: 50%;
+    margin: 5px auto;
+}
+
+.pokedetails .hw {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 5px auto;
+}
+
+.pokedetails .height {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: x-large;
+}
+
+.pokedetails .height2 {
+    color: white;
+    opacity: .4;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: large;
+}
+
+.pokedetails .weight {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: x-large;
+}
+
+.pokedetails .weight2 {
+    color: white;
+    opacity: .4;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: large;
+}
+
+.pokedetails .abilities {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 5px auto;
+    list-style: none;
+    color: #fff;
+}
+
+
+.pokedetails .abilities .ability {
+    color: #fff;
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: medium;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
 }
 
 @media screen and (min-width: 380px) {
