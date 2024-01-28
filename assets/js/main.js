@@ -12,7 +12,6 @@ function functeste(pokemon) {
 
 function convertPokemonToLi(pokemon) {
     return `
-    
     <li onclick=functeste(${JSON.stringify(pokemon.name)}) class="pokemon ${pokemon.type}">
     <span class="number">#${pokemon.number}</span>
     <span class="name">${pokemon.name}</span>

@@ -9,8 +9,4 @@ class Pokemon {
     weight;
     abilities = [];
     ability;
-    stats_name = []
-    stat
-    base_stats = []
-    base_stat
 }

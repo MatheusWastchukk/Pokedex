@@ -25,11 +25,8 @@ function convertApiToPokemon(pokeDetail) {
     pokemonD.abilities = abilities
     pokemonD.ability = ability
 
-
     return pokemonD
 }
-    
-    
 
 function getDetails(pokemon = 'ditto') {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
@@ -61,15 +58,17 @@ function detailPokemon (pokemon) {
     </ol>
     <section class="hw">
     <span class="weight"> ${pokemon.weight} ' 
-        <p class="weight2">weight</p>
+        <p class="weight2">Weight</p>
     </span>
     <span class="height"> ${pokemon.height} '
-        <p class="height2">height</p>
+        <p class="height2">Height</p>
     </span>
     </section>
     <ol class="abilities">
     <h2>Abilities</h2>
-    ${pokemon.abilities.map((ability) => `<li class="ability ${ability}">${ability}</li>`).join('')}
+    <section class="abilitiesflex"
+    ${pokemon.abilities.map((ability) => `<li class="ability">${ability}</li>`).join('')}
+    </section>
     </ol>
     </div>
     `

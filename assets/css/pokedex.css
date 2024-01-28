@@ -79,6 +79,7 @@
 }
 
 .pokemon {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: .5rem;
@@ -98,7 +99,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.3;
     width: 90%;
   }
 
@@ -280,23 +281,24 @@
 }
 
 .pokedetails .abilities {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+    padding: 10px;
     margin: 5px auto;
     list-style: none;
     color: #fff;
+    font-size: medium;
+    text-align: center;
+}
+
+.pokedetails .abilities .abilitiesflex {
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
 }
 
 
 .pokedetails .abilities .ability {
-    color: #fff;
-    padding: 10px;
-    margin: 10px 5px;
-    font-size: medium;
-    border-radius: 15px;
-    text-align: center;
-    width: 150px;
+
+    padding: 0 0 0 40px;
 }
 
 @media screen and (min-width: 380px) {
